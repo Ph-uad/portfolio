@@ -1,0 +1,79 @@
+
+
+
+//root - formattting
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lora', serif;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+
+
+    @media (max-width: 75em) {
+        & {
+            font-size: 70%;
+        }
+    }
+
+    @media (max-width: 58em) {
+        & {
+            font-size: 52%;
+        }
+    }
+
+    @media (max-width: 56.25em) {
+        & {
+            font-size: 50%;
+        }
+    }
+
+    @media (max-width: 31.25em) {
+        & {
+            font-size: 43.75%;
+        }
+    }
+
+    @media (max-width: 25em) {
+        & {
+            font-size: 30%;
+        }
+    }
+}
+
+body {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    background-color:none;
+    font-family: 'Roboto', sans-serif;
+    // overflow: hidden;
+    // width: 100vw;
+    // height: 100vh;
+    font-size: 2rem;
+    background-color: #fff;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}

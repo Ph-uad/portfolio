@@ -1,0 +1,33 @@
+
+
+///////////
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin:0 auto;
+}
+
+////////////////////////
+.main {
+    width: 100vw;
+    padding: 4rem 0;
+}
+//
+
+//Section
+.section {
+    margin-top: 10vh;
+    font-size: 1.8rem;
+    position: relative;
+    min-height: 100vh;
+    padding: 5rem;
+
+}
+//

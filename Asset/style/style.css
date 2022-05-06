@@ -1,0 +1,284 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lora", serif;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 58em) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 31.25em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media (max-width: 25em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  background-color: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  background-color: #fff;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100vw;
+  padding: 4rem 0;
+}
+
+.section {
+  margin-top: 10vh;
+  font-size: 1.8rem;
+  position: relative;
+  min-height: 100vh;
+  padding: 5rem;
+}
+
+.heading-primary {
+  font-size: 5rem;
+}
+.heading-secondary {
+  font-size: 3rem;
+}
+.heading-tertiary {
+  font-size: 2rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.link {
+  color: currentColor;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.tiles {
+  width: 50rem;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #e0e1e3, #ffffff);
+  box-shadow: -20px -20px 0px #d4d5d6;
+  transition: all 0.2s ease-in-out;
+}
+.tiles:hover {
+  transform: translateY(-20px);
+  box-shadow: 20px 20px 0px #d4d5d6;
+}
+
+.icon {
+  width: 4rem;
+  aspect-ratio: 1;
+}
+
+.fluid-container {
+  margin: 0 auto;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+  text-indent: 1rem;
+}
+.paragraph::first-letter {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+
+.img {
+  width: 50rem;
+}
+
+.nav {
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.nav-title {
+  font-family: "Megrim", cursive;
+  font-size: 1.5rem;
+}
+.nav-link {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.header {
+  margin-top: 10%;
+}
+.header-container {
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
+}
+.header-message {
+  flex: 0 1 40%;
+}
+@media (max-width: 60em) {
+  .header-message {
+    flex: 0 1 65%;
+  }
+}
+.header-gallery {
+  width: 15%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: transparent;
+  transform: rotate(50deg);
+  position: relative;
+  border-radius: 6px;
+}
+@media (max-width: 60em) {
+  .header-gallery {
+    width: 20%;
+  }
+}
+.header-gallery__image {
+  width: 200%;
+  transform: translate(-20%, -30%) rotate(-50deg) scale(0.85);
+  transition: all 0.3s ease-in-out;
+}
+.header-gallery__image:hover {
+  transform: translate(-25%, -30%) rotate(-50deg) scale(1);
+}
+
+@media (max-width: 60em) {
+  .about {
+    height: 50vh;
+  }
+}
+.about-container {
+  height: 100%;
+}
+@media (max-width: 60em) {
+  .about-container {
+    display: inline-block;
+  }
+}
+.about-text {
+  order: 2;
+  flex: 0 1 50%;
+  padding: 5rem;
+  align-self: center;
+}
+
+.process {
+  margin: 5rem 0;
+  font-size: 1.6rem;
+}
+.process-container {
+  max-width: 80%;
+  margin-left: auto;
+}
+@media (max-width: 60em) {
+  .process-container {
+    max-width: 95%;
+  }
+}
+.process-row {
+  gap: 5rem;
+  margin: 1rem 0;
+}
+.process-detail {
+  width: 80%;
+}
+@media (max-width: 60em) {
+  .process-detail {
+    max-width: 95%;
+  }
+}
+.process-detail__title {
+  display: block;
+  border-bottom: 0.2rem solid var(--color-black);
+}
+.process-detail__paragraph {
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 2rem;
+  margin-left: auto;
+  max-width: 50%;
+}
+@media (max-width: 60em) {
+  .process-detail__paragraph {
+    max-width: 95%;
+  }
+}
+.process-detail__footnote {
+  display: inline-block;
+  margin-left: 70%;
+  max-width: 40%;
+  text-align: right;
+}
+
+.philosophy {
+  min-width: 100vw;
+}
+.philosophy-title {
+  text-align: center;
+  margin: 5rem auto;
+}/*# sourceMappingURL=style.css.map */
