@@ -3,7 +3,10 @@
     padding: .5rem 2rem;
     justify-content: space-between;
     text-transform: uppercase;
-
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     &-title {
         font-family: 'Megrim', cursive;
         font-size: 1.5rem;
@@ -67,12 +70,16 @@
 
 //About
 .about {
+
     @media (max-width:60em) {
         &{
            height: 50vh;
         }
     }
 
+    &-title{
+        position: relative;
+    }
     &-container {
         height: 100%;
 
@@ -97,7 +104,6 @@
 
 //Process
 .process {
-    margin: 5rem 0;
     font-size: 1.6rem;
 
     &-container {
@@ -117,7 +123,6 @@
     }
 
     &-detail {
-        width: 80%;
 
         @media (max-width:60em) {
             & {
@@ -127,7 +132,7 @@
 
         &__title {
             display: block;
-            border-bottom: .2rem solid var(--color-black);
+            border-bottom: .2rem solid black;
 
         }
 
@@ -136,7 +141,7 @@
             display: inline-block;
             padding: 2rem;
             margin-left: auto;
-            max-width: 50%;
+            max-width: 70%;
 
             @media (max-width:60em) {
                 & {
@@ -154,15 +159,35 @@
         }
     }
 }
-
 //
 
+//Work
+.work{
+
+    &-card{
+        justify-content: space-between;
+        max-width: 60vw;
+        margin: 2rem auto;    
+
+        &__gallery{
+            flex: 0 1 50%;
+        }
+        &__detail{
+            flex: 0 1 40%;
+        
+        }
+    }
+
+    
+}
 
 
 //Philosophy
 .philosophy {
-    min-width: 100vw;
-
+            flex-direction: column;
+    &-container{
+        text-align: center;
+    }
 
     &-title {
         text-align: center;

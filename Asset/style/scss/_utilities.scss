@@ -27,26 +27,9 @@
     text-align: center;
 }
 
-.link {
-
-}
 
 .list-item {
     list-style: none;
-}
-
-.tiles {
-    width: 50rem;
-    border-radius: 5px;
-    background: linear-gradient(145deg, #e0e1e3, #ffffff);
-    box-shadow: -20px -20px 0px #d4d5d6;
-    transition: all .2s ease-in-out;
-
-
-    &:hover {
-        transform: translateY(-20px);
-        box-shadow: 20px 20px 0px #d4d5d6;
-    }
 }
 
 .icon {
@@ -71,7 +54,6 @@
 
     &::first-letter {
         font-size: 3rem;
-        font-weight: lighter;
         text-transform: capitalize;
     }
 }
