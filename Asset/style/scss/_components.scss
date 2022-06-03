@@ -176,6 +176,15 @@
             flex: 0 1 40%;
         
         }
+        &-title{
+            &__relative{
+                position: relative;
+            }
+        }
+    }
+
+    &-btn{
+        padding:1rem 1.5rem;
     }
 
     

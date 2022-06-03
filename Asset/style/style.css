@@ -299,6 +299,12 @@ h6 {
 .work-card__detail {
   flex: 0 1 40%;
 }
+.work-card-title__relative {
+  position: relative;
+}
+.work-btn {
+  padding: 1rem 1.5rem;
+}
 
 .philosophy {
   flex-direction: column;
