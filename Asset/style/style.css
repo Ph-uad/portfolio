@@ -307,6 +307,7 @@ span {
 
 @media (max-width: 60em) {
   .work {
+    margin-top: 10%;
     max-height: 50vh;
   }
 }
