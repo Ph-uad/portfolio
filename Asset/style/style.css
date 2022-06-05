@@ -87,6 +87,7 @@ body::-webkit-scrollbar {
 
 .base {
   margin-top: 2rem;
+  display: none;
 }
 
 h1,
