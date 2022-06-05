@@ -1,23 +1,44 @@
 
-
 .flex-column{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 64em) {
+        flex-direction: column;
+    }
 }
 
 
 
 //Section
 .section {
-    font-size: 1.8rem;
     position: relative;
     justify-content: space-between;
     max-width: 80vw;
     margin: 5rem auto;
-    min-height: 100vh;
+    height: 100vh;
     padding: 5rem;
 
+    @media (max-width:60em) {
+        & {
+            max-width: 90vw;
+        }
+    }
 }
-//
+
+.fluid-container {
+    margin: 0 auto;
+}
+
+.base{
+    margin-top: 2rem;
+}

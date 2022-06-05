@@ -1,21 +1,22 @@
-//Utilities
-.heading {
-    &-primary {
-        font-size: 5rem;
-    }
-    &-secondary {
-        font-size: 3rem;
-    }
-    &-tertiary {
-        font-size: 2rem;
+.btn{
+    padding: 1rem 2rem;
+    border: thin solid #00ffff;
+    background-color: #000505;
+    margin-top: 2rem;
+   
+    color: #f1f1f1;
+    font-size: 2rem;
+    border-radius: 2px;
+
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        transform: translateY(-5px);
+        box-shadow: hsla(212, 76%, 10%, 0.4) 0px 0px 0px 2px, #06182ca6 0px 4px 6px -1px, #ffffff14 0px 1px 0px inset;
     }
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
+
 
 .link{
    color: currentColor;
@@ -33,31 +34,54 @@
 }
 
 .icon {
+    display: inline;
     width: 4rem;
     aspect-ratio: 1;
-}
 
-.fluid-container {
-    margin: 0 auto;
-}
-
-//
-
-
-
-//
-
-//Paragraph
-.paragraph {
-    margin-bottom: 1rem;
-    text-indent: 1rem;
-
-    &::first-letter {
-        font-size: 3rem;
-        text-transform: capitalize;
+    &-small{
+        width: 2rem;
     }
 }
 
-.img{
-    width: 50rem;
-}
+
+
+.button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #000;
+    font-size: 18px;
+    color: #f1f1f1;
+  }
+  
+  .button:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 0%;
+
+    @media (max-width: 64rem) {
+        &{
+            top: 90%;
+        }
+    }
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 0%;
+
+    @media (max-width: 64rem) {
+        &{
+            top: 90%;
+        }
+    }
+  }
+  
