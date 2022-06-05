@@ -60,7 +60,11 @@ body::-webkit-scrollbar {
   align-items: center;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 @media (max-width: 60em) {
+=======
+@media (max-width: 64em) {
+>>>>>>> 68c332394b2f9b103cc45b71aa0ec686e2d8dd05
   .flex {
     flex-direction: column;
   }
