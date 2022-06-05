@@ -306,13 +306,14 @@ span {
 
 .work-container {
   position: relative;
-  width: 100%;
-  height: 90%;
+  width: 80%;
+  margin: 0% auto;
+  height: 100%;
+  overflow-x: hidden;
 }
 @media (max-width: 64rem) {
   .work-container {
     height: 60%;
-    width: 100%;
   }
 }
 .work-card {
@@ -331,12 +332,10 @@ span {
   }
 }
 .work-card__gallery {
-  width: 90%;
+  width: 100%;
 }
 .work-card__image {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .work-card__detail {
   flex: 0 1 40%;
@@ -406,16 +405,10 @@ span {
 
 .button {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border: none;
-  border-radius: 50%;
   z-index: 10px;
   cursor: pointer;
-  background-color: #000;
-  font-size: 18px;
-  color: #f1f1f1;
+  border: none;
+  background-color: transparent;
 }
 
 .button:active {

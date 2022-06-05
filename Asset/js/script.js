@@ -1,7 +1,7 @@
 let tl = gsap.timeline();
 
 tl.from(".heading-jumbo__large", { duration: 1, opacity: 0, scale: 0.3, ease: "back", y: -200 });
-tl.from(".icon", { duration: .5, opacity: 0, y: -20, stagger: 0.5 });
+tl.from(".icon", { opacity: 0, y: -20, stagger: 0.5 });
 tl.from(" .slide-link__line", { opacity: 0 });
 
 
