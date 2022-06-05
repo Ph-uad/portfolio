@@ -323,7 +323,7 @@ span {
 }
 @media (max-width: 64rem) {
   .work-container {
-    height: 60%;
+    height: 100%;
   }
 }
 .work-card {
