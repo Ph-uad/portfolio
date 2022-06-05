@@ -30,7 +30,7 @@ span{
             font-size: 10rem;
             top: 5%;
             right: 10%;
-            z-index: -1;
+            z-index: -10;
             -webkit-text-stroke-width: 1px;
           }
       }
@@ -109,5 +109,6 @@ position: absolute;
   -webkit-text-stroke: 0px;
   background-clip: text;
   color: transparent;
+  z-index: -10;
 }
 
