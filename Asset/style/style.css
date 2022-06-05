@@ -290,10 +290,6 @@ span {
   max-width: 80%;
   max-height: 80%;
   margin: 0 auto;
-  overflow: scroll;
-}
-.process-container::-webkit-scrollbar {
-  display: none;
 }
 @media (max-width: 60em) {
   .process-container {
@@ -336,10 +332,7 @@ span {
 }
 @media (max-width: 64rem) {
   .work-card {
-    flex-direction: column;
     margin-top: 10%;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 }
 .work-card__gallery {
