@@ -1,23 +1,19 @@
-
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
-<<<<<<< HEAD
-    @media (max-width: 60em) {
-=======
-    @media (max-width: 64em) {
->>>>>>> 68c332394b2f9b103cc45b71aa0ec686e2d8dd05
-        flex-direction: column;
+     @media (max-width: 60em) {
+        & {
+            flex-direction: column;
+        }
     }
 }
 
@@ -44,6 +40,6 @@
     margin: 0 auto;
 }
 
-.base{
+.base {
     margin-top: 2rem;
 }
