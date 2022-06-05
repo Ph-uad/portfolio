@@ -60,7 +60,7 @@ body::-webkit-scrollbar {
   align-items: center;
   flex-wrap: wrap;
 }
-@media (max-width: 64em) {
+@media (max-width: 60em) {
   .flex {
     flex-direction: column;
   }
