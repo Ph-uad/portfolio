@@ -100,6 +100,12 @@
 
 //Process
 .process {
+
+    @media (max-width:60em) {
+        & {
+            max-height: 80vh;
+        }
+    }
     &-container {
         max-width: 80%;
         max-height: 80%;
@@ -134,12 +140,18 @@
 //Work
 .work {
 
+    @media (max-width:60em) {
+        & {
+            max-height: 50vh;
+        }
+    }
+
     &-container {
         position: relative;
         width: 80%;
         margin: 0% auto;
         height: 100%;
-        overflow-x:  hidden;
+        overflow:  hidden;
 
         @media (max-width: 64rem) {
             & {
@@ -153,7 +165,7 @@
         height: 100%;
         margin: 0 auto;
         position: absolute;
-        transition: all 0.5s;
+        transition: all 0.5s;overflow: hidden;
 
         @media (max-width: 64rem) {
             & {

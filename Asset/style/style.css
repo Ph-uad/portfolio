@@ -281,6 +281,11 @@ span {
   }
 }
 
+@media (max-width: 60em) {
+  .process {
+    max-height: 80vh;
+  }
+}
 .process-container {
   max-width: 80%;
   max-height: 80%;
@@ -304,12 +309,17 @@ span {
   text-align: right;
 }
 
+@media (max-width: 60em) {
+  .work {
+    max-height: 50vh;
+  }
+}
 .work-container {
   position: relative;
   width: 80%;
   margin: 0% auto;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @media (max-width: 64rem) {
   .work-container {
@@ -322,6 +332,7 @@ span {
   margin: 0 auto;
   position: absolute;
   transition: all 0.5s;
+  overflow: hidden;
 }
 @media (max-width: 64rem) {
   .work-card {
@@ -419,18 +430,8 @@ span {
   top: 45%;
   left: 0%;
 }
-@media (max-width: 64rem) {
-  .btn-prev {
-    top: 90%;
-  }
-}
 
 .btn-next {
   top: 45%;
   right: 0%;
-}
-@media (max-width: 64rem) {
-  .btn-next {
-    top: 90%;
-  }
 }/*# sourceMappingURL=style.css.map */
