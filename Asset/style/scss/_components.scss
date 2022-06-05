@@ -50,7 +50,7 @@
     }
 
     &-gallery {
-        width: 25%;
+        width: 35%;
         aspect-ratio: 1;
         overflow: hidden;
         border: transparent;
@@ -67,7 +67,7 @@
 
         &__image {
             width: 200%;
-            transform: translate(-20%, -30%) rotate(-50deg) scale(.84);
+            transform: translate(-20%, -30%) rotate(-50deg) scale(.8);
             transition: all 0.3s ease-in-out;
 
             &:hover {
@@ -136,8 +136,8 @@
 
     &-container {
         position: relative;
-        width: 80%;
-        height: 70%;
+        width: 100%;
+        height: 90%;
         overflow: hidden;
 
         @media (max-width: 64rem) {
@@ -149,18 +149,17 @@
     }
 
     &-card {
-        width: 80%;
+        width: 100%;
         height: 100%;
         margin: 0 auto;
         position: absolute;
         transition: all 0.5s;
-        padding: 0 5%;
 
         @media (max-width: 64rem) {
             & {
-                height: 80%;
-                width: 100%;
                 margin-top: 10%;
+                justify-content: flex-start;
+                align-items: flex-start;
             }
         }
 
@@ -169,22 +168,35 @@
         }
 
         &__image {
-            width: 100%;
+            width: 60rem;
+
+            @media (max-width: 64rem) {
+                & {
+                    width: 50rem;
+                }
+            }
         }
 
         &__detail {
             flex: 0 1 40%;
+
+            @media (max-width: 64rem) {
+                & {
+                    margin-top: 10%;
+                }
+            }
+        }
+
+        &-link {
+            margin-top: 2rem;
         }
     }
 
-    &-link {
-        margin-top: 2rem;
-    }
-
-    &-flex{
+    &-flex {
         @media (max-width:64em) {
             flex-direction: row;
         }
+
     }
 }
 
