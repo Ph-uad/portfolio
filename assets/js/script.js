@@ -1,22 +1,9 @@
 let tl = gsap.timeline();
 
 tl.from(".heading-jumbo__large", { duration: 1, opacity: 0, scale: 0.3, ease: "back", y: -200 });
-tl.from(".icon", { opacity: 0, y: -20, stagger: 0.5 });
+tl.from(".icon", { y: -20, });
 tl.from(" .slide-link__line", { opacity: 0 });
 
-
-// gsap.to(".message-design__block", {
-//     scrollTrigger: {
-//         trigger: ".fluid-container",
-//         start:"top, -50%",
-//         scrub: 2,
-
-//         toggleActions: "restart pause reverse pause"
-//     },
-//        scale: 0,
-//         y: 2500,
-//         x: 500
-// });
 
 
 const slides = document.querySelectorAll(".work-card");
