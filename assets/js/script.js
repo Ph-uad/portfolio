@@ -39,3 +39,44 @@ prevSlide.addEventListener("click", function () {
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
     });
 });
+
+
+
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelectorAll('.ml3');
+
+textWrapper.forEach(text => {
+    text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+});
+
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 3200,
+    delay: (el, i) => 100 * (i+1)
+  })
+
+
+const slide = ( ) =>{
+    videos.forEach((block, index) => {
+        block.style.transform = `translateX(${100 * (index - currentSlide)}%)`; 
+    });
+}
+
+slide()
+
+
+buttonPrevious.addEventListener('click',()=>{
+   currentSlide === 0 ? currentSlide  = videos.length -1 : currentSlide--;
+   slide();
+})
+
+buttonNext.addEventListener('click',()=>{
+    currentSlide === videos.length -1 ? currentSlide = 0 : currentSlide++;
+    slide();
+})
