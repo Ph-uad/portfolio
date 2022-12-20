@@ -31,14 +31,26 @@
 
 //Header
 .header {
-    padding: 10%;
-
-    @media (max-width: 70em) {
-        padding: 45% 10%;
-    }
+    padding: 2rem 10rem ;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.profile{
+    &__container{
+        width: 50%;
+    }
+
+    &__details{
+        flex: 0 0 60%;
+    }
+}
 //
+
 
 //About
 .about {

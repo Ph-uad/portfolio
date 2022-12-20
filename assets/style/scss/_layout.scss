@@ -10,14 +10,12 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-     @media (max-width: 60em) {
+     @media (min-width: 64em) {
         & {
-            flex-direction: column;
+            flex-wrap:nowrap;
         }
     }
 }
-
-
 
 //Section
 .section {
