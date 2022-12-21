@@ -1,8 +1,7 @@
-.flex-column {
+.flex--column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .flex {
@@ -17,27 +16,8 @@
     }
 }
 
-//Section
-.section {
-    position: relative;
-    justify-content: space-between;
-    max-width: 80vw;
-    margin: 5rem auto;
-    padding: 5rem;
-
-    @media (max-width:60em) {
-        & {
-            max-width: 90vw;
-            padding: 1rem;
-        }
-    }
-}
-
-.fluid-container {
-    margin: 0 auto;
-}
-
-.base {
-    margin-top: 2rem;
-    display: none;
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
 }

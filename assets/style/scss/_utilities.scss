@@ -1,83 +1,32 @@
-.btn{
-    padding: 1rem 2rem;
-    border: thin solid #00ffff;
-    background-color: #000505;
-    margin-top: 2rem;
-   
-    color: #f1f1f1;
-    font-size: 2rem;
-    border-radius: 2px;
-
-    transition: all .2s ease-in-out;
-
-    &:hover{
-        transform: translateY(-5px);
-        box-shadow: hsla(212, 76%, 10%, 0.4) 0px 0px 0px 2px, #06182ca6 0px 4px 6px -1px, #ffffff14 0px 1px 0px inset;
-    }
-}
-
-
-
-.link{
-   color: currentColor;
-   text-transform: capitalize;
-   text-decoration: none;
-}
-
-.center {
-    text-align: center;
-}
-
-
-.list-item {
-    list-style: none;
+.width--min {
+  width: 30%;
 }
 
 .icon {
-    display: inline;
-    width: 4rem;
-    aspect-ratio: 1;
+  display: inline;
+  width: 4rem;
+  aspect-ratio: 1;
+  filter: grayscale(100%);
 
-    &-small{
-        width: 2rem;
-    }
-}
-
-.button {
-    position: absolute;
-    z-index: 10px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-  }
-  
-  .button:active {
-    transform: scale(1.1);
-  }
-  
-  .btn-prev {
-    top: 45%;
-    left: 0%;
-  }
-  
-  .btn-next {
-    top: 45%;
-    right: 0%;
-  }
-
-  .figure{
-
-  &__ellipse{
-    width: 80%;
-    height: 80%;
-    clip-path: circle(45%  at 50%);
-    overflow: hidden;
+  &-small {
+    width: 2rem;
   }
 }
 
-  .img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+.figure {
+  width: 80%;
+  height: 80%;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &__ellipse {
+    clip-path: circle(45% at 50%);
   
+  }
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

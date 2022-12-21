@@ -34,147 +34,52 @@
     padding: 2rem 10rem ;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .profile{
     &__container{
-        width: 50%;
+        @media (min-width:64em) {
+            width: 50%;
+        }
+    }
+
+    &__picture{
+        flex: 3 3 40%;
+        @media (min-width:64em) {
+        }
     }
 
     &__details{
-        flex: 0 0 60%;
+        @media (min-width:64em) {
+            flex: 0 0 50%;
+        }
+
     }
 }
 //
 
+.option{
 
-//About
-.about {
-    padding: 10%;
-
-    &-gallery {
-        width: 35%;
-        aspect-ratio: 1;
-        overflow: hidden;
-        border: transparent;
-        transform: rotate(50deg);
-        position: relative;
-        border-radius: 6px;
-
-        @media (max-width:60em) {
-            & {
-                width: 20%;
-                order: 10;
-            }
-        }
-
-        &__image {
-            width: 200%;
-            transform: translate(-20%, -30%) rotate(-50deg) scale(.8);
-            transition: all 0.3s ease-in-out;
-
-            &:hover {
-                transform: translate(-25%, -30%) rotate(-50deg) scale(1);
-            }
-        }
+    &__card{
+        aspect-ratio: 2/1;
     }
 
-    &-text {
-        order: 2;
-        flex: 0 1 50%;
-        padding: 15% 0;
+    &__card:nth-child(1){
+        background: url(../image/webDev.jpg);
+    }
+    &__card:nth-child(2){
+        background: url(../image/webDesign.jpg);
+    }
+    &__card:nth-child(3){
+        background: url(../image/writing.jpg);
     }
 }
-
-//
-
-//Process
-.process {
-
-    &-container {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    &-line {
-        width: 100%;
-        height: .2rem;
-        background-color: black;
-    }
-
-    &-numbering {
-        text-align: right;
-    }
-}
-
-//
-
-//Work
-.work {
-
-    &-container {
-        width: 80%;
-        height: 70vh;
-        margin: 0 auto;
-        margin-top: 10%;
-        position: relative;
-        overflow: hidden;
-    }
-
-    &-card {
-        position: absolute;
-        transition: all 0.5s;
-        width: 100%;
-
-
-        @media (max-width: 64rem) {
-            & {
-                margin-top: 10%;
-            }
-        }
-
-        &__image {
-            width: 100%;
-            height: 50rem;
-            object-fit: cover;
-        }
-
-        &__detail {
-            padding: 1%;
-
-            @media (max-width: 64rem) {
-                & {
-                    margin-top: 10%;
-                }
-            }
-        }
-
-        &-link {
-            margin-top: 2rem;
-        }
-    }
-
-    &-flex {
-        @media (max-width:64em) {
-            flex-direction: row;
-        }
-
-    }
-}
-
 
 
 //footer
 .footer {
-    height: 50vh;
-
     &-container {
-        width: 80%;
-        height: 100%;
+        width: 100%;
         margin: 0 auto;
         padding: 5% 0;
         justify-content: space-between;
