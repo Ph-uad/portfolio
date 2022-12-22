@@ -32,47 +32,65 @@
 //Header
 .header {
     padding: 2rem 10rem ;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
 }
 
 .profile{
     &__container{
-        @media (min-width:64em) {
-            width: 50%;
-        }
+        width: 100%;
+        @media (min-width:69em) {width: 50%;}
     }
 
-    &__picture{
-        flex: 3 3 40%;
-        @media (min-width:64em) {
-        }
-    }
+    &__picture{flex: 3 3 40%;}
 
     &__details{
-        @media (min-width:64em) {
-            flex: 0 0 50%;
-        }
-
+        @media (min-width:64em) {flex: 0 4 90%;}
     }
 }
 //
 
 .option{
+    height: 30%;
 
-    &__card{
-        aspect-ratio: 2/1;
+    &__container{
+        height: 100%;
+        width: 100%;
+    }
+    &__link{
+        display: block;
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: #fff;
+        &:nth-child(1){
+            background: linear-gradient(to right,#000000fc, #00000800),  url(../image/webDev.jpg);
+
+        }
+        &:nth-child(2){
+            background: linear-gradient(to right,#000000d3, #00000800), url(../image/webDesign.jpg);
+        }
+        &:nth-child(3){
+            background: linear-gradient(to right,#000000d7, #00000800), url(../image/writing.jpg);
+
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(n){
+            background-size:cover;
+            background-position: top center;
+        }
+
+
     }
 
-    &__card:nth-child(1){
-        background: url(../image/webDev.jpg);
+    &__background{
+        position: absolute;
+        width: 100%;
     }
-    &__card:nth-child(2){
-        background: url(../image/webDesign.jpg);
-    }
-    &__card:nth-child(3){
-        background: url(../image/writing.jpg);
-    }
+
 }
 
 
@@ -81,7 +99,6 @@
     &-container {
         width: 100%;
         margin: 0 auto;
-        padding: 5% 0;
         justify-content: space-between;
     }
 }

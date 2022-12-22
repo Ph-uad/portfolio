@@ -1,111 +1,87 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Lora', serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+
+
+  @media (max-width: 75em) {
+      & {
+          font-size: 70%;
+      }
+  }
+
+  @media (max-width: 58em) {
+      & {
+          font-size: 52%;
+      }
+  }
+
+  @media (max-width: 56.25em) {
+      & {
+          font-size: 50%;
+      }
+  }
+
+  @media (max-width: 31.25em) {
+      & {
+          font-size: 43.75%;
+      }
+  }
+
+  @media (max-width: 25em) {
+      & {
+          font-size: 30%;
+      }
+  }
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
-
-// .heading-jumbo {
-//     font-size:3rem;
-//     // &__large{
-//     //     font-size: 13rem;
-//     //     font-family: 'Megrim', cursive;
-//     //     -webkit-text-stroke-width: 1px;
-//     //     -webkit-text-stroke-color: #00ffff;
-//     //     line-height: 1.4;
-//     //     cursor: pointer;
-
-//     //     @media (min-width:60em) {
-//     //       & {
-//     //         font-size: 40rem;
-//     //         -webkit-text-stroke-width: 2px;
-//     //       }
-//     //   }
-        
-//     // }
-//   }
-
-  .heading--primary {
-    font-size: 3rem;
+.heading{
+  &--primary {
+    font-size: 2rem;
   }
 
-  .heading-secondary {
-    font-size: 3rem;
-    text-transform: capitalize;
-    font-weight: 400;
-    @media (max-width:64em) {
-        &{
-            position: relative;
-        }
-    }
-  }
-
-  .heading-tertiary {
-    font-size: 3rem;
-  }
-
-  .heading-quadruple {
-    font-size: 2.5rem;
-
-  }
-
-  .heading-quintuple {
+  &--secondary{
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 300;
   }
 
+  &--tertiary {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
 
-span, .heading--sextuple{
-  font-size: 1.6rem;
-  font-weight: 200;
+  span,
+  &--sextuple {
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
 }
   
-  .section-title{
-    font-size: 2rem;
-    margin: 2% auto;
-    font-weight: 400;
-    text-decoration: underline;
-    cursor: pointer;
-    text-transform: capitalize;
-    max-width: fit-content;
-  }
-
-  .link{
-      text-decoration: none;
-  }
-
-  .paragraph {
-    font-size: 1.6rem;
-    text-align: left;
+.small-text {
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  display: inline;
+  text-decoration: underline;
 }
 
-.small-text{
-    text-align: center;
-    font-size: 1.4rem;
-    font-style: italic;
-    display: inline;
-    text-decoration: underline;
-}
-
-.upside-down{
-position: absolute;
-  transform: rotateX(108deg) translateY(180%);
-  background: linear-gradient(transparent 50% , aqua);
-  -webkit-text-stroke: 0px;
-  background-clip: text;
-  color: transparent;
-  z-index: -10;
-}
-
-.signature{
-  font-family: 'Ballet', cursive;
+.signature {
+  font-family: 'Mea Culpa', cursive;
   text-decoration: line-through;
 }
 
-.link{
+.link {
   color: currentColor;
   text-decoration: none;
 }
