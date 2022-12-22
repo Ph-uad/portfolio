@@ -31,9 +31,13 @@
 
 //Header
 .header {
-    padding: 2rem 10rem ;
+    padding: 2rem 4rem ;
     height: 95vh;
     width: 100vw;
+
+    @media (min-width:64em) {
+        padding: 2rem 10rem ;
+    }
 }
 
 .profile{
