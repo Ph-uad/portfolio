@@ -1,108 +1,106 @@
 //nav
 .nav {
-    padding: .5rem 2rem;
-    justify-content: space-between;
-    text-transform: uppercase;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  text-transform: uppercase;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
+  @media (max-width: 64em) {
+    flex-direction: row;
+  }
+
+  &-title {
+    font-family: "Megrim", cursive;
+    font-size: 1.5rem;
+  }
+
+  &-link {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: lighter;
 
     @media (max-width: 64em) {
-        flex-direction: row;
+      flex-direction: row;
     }
-
-    &-title {
-        font-family: 'Megrim', cursive;
-        font-size: 1.5rem;
-    }
-
-    &-link {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        font-weight: lighter;
-
-        @media (max-width: 64em) {
-            flex-direction: row;
-        }
-    }
+  }
 }
 
 //Header
-.header {
-    padding: 2rem 4rem ;
-    height: 95vh;
-    width: 100vw;
-
-    @media (min-width:64em) {
-        padding: 2rem 10rem ;
-    }
-}
-
-.profile{
-    &__container{
-        width: 100%;
-        @media (min-width:69em) {width: 50%;}
-    }
-
-    &__picture{flex: 3 3 40%;}
-
-    &__details{
-        @media (min-width:64em) {flex: 0 4 90%;}
-    }
+.profile {
+  height: 95vh;
+  
+  &__container {
+    height: 100%;
+    justify-content: space-around;
+  }
 }
 //
 
-.option{
-    height: 30%;
-
-    &__container{
-        height: 100%;
-        width: 100%;
+.bio {
+  justify-content: left;
+  &__picture {
+    flex: 0 0 40%;
+    @media (min-width: 45em) {
+      flex: 0 0 20%;
     }
-    &__link{
-        display: block;
-     
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        color: #fff;
-        &:nth-child(1){
-            background: linear-gradient(to right,#000000fc, #00000800),  url(../image/webDev.jpg);
-
-        }
-        &:nth-child(2){
-            background: linear-gradient(to right,#000000d3, #00000800), url(../image/webDesign.jpg);
-        }
-        &:nth-child(3){
-            background: linear-gradient(to right,#000000d7, #00000800), url(../image/writing.jpg);
-
-            background-repeat: no-repeat;
-        }
-
-        &:nth-child(n){
-            background-size:cover;
-            background-position: top center;
-        }
-
-
-    }
-
-    &__background{
-        position: absolute;
-        width: 100%;
-    }
-
+  }
+  &__details {
+    flex: 0 0 55%;
+  }
 }
 
+.option {
+    height: 40%;
+
+    @media (min-width:64em) {
+        &{
+            height: 30%;
+        }
+    }
+    
+  &__link {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+
+    &:nth-child(1) {
+      background: linear-gradient(to right, #000000fc, #00000800),
+        url(../image/webDev.jpg);
+    }
+    &:nth-child(2) {
+      background: linear-gradient(to right, #000000d3, #00000800),
+        url(../image/webDesign.jpg);
+    }
+    &:nth-child(3) {
+      background: linear-gradient(to right, #000000d7, #00000800),
+        url(../image/writing.jpg);
+
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(n) {
+      background-size: cover;
+      background-position: top center;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    width: 100%;
+  }
+}
 
 //footer
 .footer {
-    &-container {
-        width: 100%;
-        margin: 0 auto;
-        justify-content: space-between;
-    }
+  &-container {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }
