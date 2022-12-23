@@ -156,6 +156,12 @@ h6 {
 
 .profile {
   height: 95vh;
+  height: 92vh;
+}
+@media (min-width: 45em) {
+  .profile {
+    height: 95vh;
+  }
 }
 .profile__container {
   height: 100%;

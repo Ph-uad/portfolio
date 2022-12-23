@@ -31,7 +31,13 @@
 //Header
 .profile {
   height: 95vh;
-  
+  height: 92vh;
+  @media (min-width: 45em) {
+    & {
+      height: 95vh;
+    }
+  }
+
   &__container {
     height: 100%;
     justify-content: space-around;
@@ -44,7 +50,9 @@
   &__picture {
     flex: 0 0 40%;
     @media (min-width: 45em) {
-      flex: 0 0 20%;
+      & {
+        flex: 0 0 20%;
+      }
     }
   }
   &__details {
@@ -53,14 +61,14 @@
 }
 
 .option {
-    height: 40%;
+  height: 40%;
 
-    @media (min-width:64em) {
-        &{
-            height: 30%;
-        }
+  @media (min-width: 64em) {
+    & {
+      height: 30%;
     }
-    
+  }
+
   &__link {
     display: block;
     display: flex;
