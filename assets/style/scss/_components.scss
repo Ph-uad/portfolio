@@ -104,6 +104,16 @@
   }
 }
 
+.tile{
+    width: 70%;
+
+  &__details {
+    flex: 1 0 60%;
+    padding: 3%;
+  }
+
+}
+
 //footer
 .footer {
   &-container {
