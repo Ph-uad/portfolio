@@ -3,7 +3,15 @@ const devProject = [
     {img: './assets/image/uI-adaptation.png',title: 'UI Adaptation' , description: 'I was inspired by the design of _____ and desided to Develop and adapt their UIDesign as a challenge  '},
     {img: './assets/image/Real-Estate.png',title: 'Real Estate' , description: 'I was inspired by the design of _____ and desided to Develop and adapt their UIDesign as a challenge  '},
 ]
+
+const designProject = [
+    {img: './assets/image/gentilhomme.jpg',title: 'Gentilhomme' , description: 'This was an initial try at web design project that was aim at better respresntation a product, with the concept of maintaining simplicity, effective design, ensure ease of use and still look decent enough to be in trend'},
+    {img: './assets/image/UInumbskull.jpg',title: 'UI NumbSkull' , description: 'The process of design first before developing '},
+    {img: './assets/image/WireFrame.jpg',title: 'WireFraming' , description: 'I was inspired by the design of _____ and desided to Develop and adapt their UIDesign as a challenge  '},
+]
+
 const widget = document.querySelector('#widget')
+const UIwidget = document.querySelector('#UI-widget')
  
 const jobTile = (project) =>{
     return(
@@ -22,11 +30,14 @@ const jobTile = (project) =>{
 }
 
 
-const appendArrayToDom = (object) =>{
+const appendArrayToDom = (object, destination) =>{
     object.forEach(item => {
-        widget.insertAdjacentHTML("afterbegin",jobTile(item))
+        destination.insertAdjacentHTML("afterbegin",jobTile(item))
     })
 }
 
+console.log(widget, UIwidget)
 
-appendArrayToDom(devProject)
+// appendArrayToDom(devProject, widget)
+appendArrayToDom(designProject, UIwidget)
+
