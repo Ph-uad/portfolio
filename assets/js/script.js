@@ -5,9 +5,9 @@ devProject = [
     { img: './assets/image/dev/Real-Estate.png', title: 'Real Estate', description: 'I was inspired by the design of _____ and desided to Develop and adapt their UIDesign as a challenge  ' },
 ],
 designProject = [
-    { img: './assets/image/design/gentilhomme.jpg', title: 'Gentilhomme', description: 'This was an initial try at web design project that was aim at better respresntation a product, with the concept of maintaining simplicity, effective design, ensure ease of use and still look decent enough to be in trend' },
-    { img: './assets/image/design/UInumbskull.jpg', title: 'UI NumbSkull', description: 'The process of design first before developing ' },
-    { img: './assets/image/design/WireFrame.jpg', title: 'WireFraming', description: 'I was inspired by the design of _____ and desided to Develop and adapt their UIDesign as a challenge  ' },
+    { img: '/assets/image/design/gentilhomme.jpg', title: 'Gentilhomme', description: 'This was an initial try at web design project that was aim at better respresntation a product, with the concept of maintaining simplicity, effective design, ensure ease of use and still look decent enough to be in trend' },
+    { img: '/assets/image/design/UInumbskull.jpg', title: 'UI NumbSkull', description: 'The process of design first before developing ' },
+    { img: '/assets/image/design/WireFrame.jpg', title: 'WireFraming', description: 'I was inspired by the design of _____ and desided to Develop and adapt their UIDesign as a challenge  ' },
 ]
 writingProject = [
     { img: './assets/image/articles/DigitalTransformation.jpg', title: 'Digital Transformation', description: 'This was an initial try at web design project that was aim at better respresntation a product, with the concept of maintaining simplicity, effective design, ensure ease of use and still look decent enough to be in trend' },
