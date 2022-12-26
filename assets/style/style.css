@@ -158,15 +158,6 @@ h6 {
   }
 }
 
-.profile {
-  height: 95vh;
-  height: 92vh;
-}
-@media (min-width: 45em) {
-  .profile {
-    height: 95vh;
-  }
-}
 .profile__container {
   height: 100%;
   justify-content: space-around;
@@ -188,11 +179,14 @@ h6 {
 }
 
 .option {
-  height: 40%;
+  height: 40rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3%;
 }
 @media (min-width: 64em) {
   .option {
-    height: 30%;
+    height: 25rem;
   }
 }
 .option__link {

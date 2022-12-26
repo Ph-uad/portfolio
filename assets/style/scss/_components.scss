@@ -30,14 +30,6 @@
 
 //Header
 .profile {
-  height: 95vh;
-  height: 92vh;
-  @media (min-width: 45em) {
-    & {
-      height: 95vh;
-    }
-  }
-
   &__container {
     height: 100%;
     justify-content: space-around;
@@ -61,11 +53,13 @@
 }
 
 .option {
-  height: 40%;
+  height: 40rem;
+  position: sticky;
+  top: 3%;
 
   @media (min-width: 64em) {
     & {
-      height: 30%;
+      height: 25rem;
     }
   }
 
