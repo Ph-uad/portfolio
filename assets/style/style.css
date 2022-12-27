@@ -54,8 +54,8 @@ body::-webkit-scrollbar {
 
 html {
   font-size: 62.5%;
-  font-family: "Lora", serif;
-  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
   scroll-behavior: smooth;
 }
 @media (max-width: 75em) {
@@ -90,17 +90,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .heading--primary {
-  font-size: 2rem;
-}
-.heading--secondary {
   font-size: 3rem;
 }
-.heading--tertiary {
+.heading--secondary {
   font-size: 2rem;
+}
+.heading--tertiary {
+  font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
 }
