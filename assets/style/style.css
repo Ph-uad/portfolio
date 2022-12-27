@@ -55,7 +55,7 @@ body::-webkit-scrollbar {
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
-  line-height: 1.7;
+  line-height: 1.5;
   scroll-behavior: smooth;
 }
 @media (max-width: 75em) {
@@ -98,11 +98,11 @@ h6 {
 }
 .heading--secondary {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 .heading--tertiary {
   font-size: 1.8rem;
-  font-weight: 400;
-  text-transform: capitalize;
+  font-weight: 300;
 }
 .heading span, .heading--sextuple {
   font-size: 1.6rem;
@@ -169,9 +169,12 @@ h6 {
 
 .bio {
   justify-content: left;
+  background: #fff;
 }
 .bio__picture {
   flex: 0 0 40%;
+  justify-self: center;
+  align-self: center;
 }
 @media (min-width: 45em) {
   .bio__picture {
@@ -179,20 +182,26 @@ h6 {
   }
 }
 .bio__details {
-  flex: 0 0 55%;
+  flex: 0 0 100%;
 }
 
 .option {
   position: -webkit-sticky;
   position: sticky;
   top: 3%;
-  height: 74px;
+  height: 44px;
   width: 100vw;
   flex-wrap: nowrap;
   background: #fff;
   box-shadow: inset 0 -4px 0 0 #dadce0;
 }
+@media (min-width: 64em) {
+  .option {
+    height: 74px;
+  }
+}
 .option__container {
+  height: 100%;
   justify-content: center;
   gap: 5%;
 }
@@ -209,7 +218,12 @@ h6 {
 }
 
 .tile {
-  width: 70%;
+  width: 90%;
+}
+@media (min-width: 64em) {
+  .tile {
+    width: 70%;
+  }
 }
 .tile__details {
   flex: 1 0 60%;
