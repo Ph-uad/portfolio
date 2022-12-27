@@ -6,6 +6,10 @@
   box-sizing: inherit;
 }
 
+:root {
+  --link-color__current: #1B73E8;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -179,37 +183,25 @@ h6 {
 }
 
 .option {
-  height: 40rem;
   position: -webkit-sticky;
   position: sticky;
   top: 3%;
+  height: 74px;
+  width: 100vw;
+  flex-wrap: nowrap;
+  background: #fff;
+  box-shadow: inset 0 -4px 0 0 #dadce0;
 }
-@media (min-width: 64em) {
-  .option {
-    height: 25rem;
-  }
+.option__container {
+  justify-content: center;
+  gap: 5%;
 }
 .option__link {
   display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  color: #fff;
+  text-align: center;
 }
-.option__link:nth-child(1) {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9882352941), rgba(0, 0, 8, 0)), url(../image/webDev.jpg);
-}
-.option__link:nth-child(2) {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8274509804), rgba(0, 0, 8, 0)), url(../image/webDesign.jpg);
-}
-.option__link:nth-child(3) {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8431372549), rgba(0, 0, 8, 0)), url(../image/writing.jpg);
-  background-repeat: no-repeat;
-}
-.option__link:nth-child(n) {
-  background-size: cover;
-  background-position: top center;
+.option__link:hover {
+  border-bottom: 2px solid var(--link-color__current);
 }
 .option__background {
   position: absolute;

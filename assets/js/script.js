@@ -1,4 +1,4 @@
-const container = document.querySelector('.option__container'),
+const container = document.querySelector('.project'),
 devProject = [
     { img: './assets/image/dev/numb-Skull.png', title: 'Numb Skull', description: 'This was a web project that was aim at subtle animation and effects without much interactions by the user. Aimed to satisfy user experience' },
     { img: './assets/image/dev/uI-adaptation.png', title: 'UI Adaptation', description: 'I was inspired by the design of _____ and desided to Develop and adapt their UIDesign as a challenge  ' },

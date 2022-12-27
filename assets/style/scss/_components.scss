@@ -53,42 +53,25 @@
 }
 
 .option {
-  height: 40rem;
   position: sticky;
   top: 3%;
+  height: 74px;
+  width: 100vw;
+  flex-wrap: nowrap;
 
-  @media (min-width: 64em) {
-    & {
-      height: 25rem;
-    }
+  background: #fff;
+  box-shadow: inset 0 -4px 0 0 #dadce0;
+
+  &__container{
+    justify-content: center ;
+    gap: 5%;
   }
-
+  
   &__link {
     display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: #fff;
-
-    &:nth-child(1) {
-      background: linear-gradient(to right, #000000fc, #00000800),
-        url(../image/webDev.jpg);
-    }
-    &:nth-child(2) {
-      background: linear-gradient(to right, #000000d3, #00000800),
-        url(../image/webDesign.jpg);
-    }
-    &:nth-child(3) {
-      background: linear-gradient(to right, #000000d7, #00000800),
-        url(../image/writing.jpg);
-
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(n) {
-      background-size: cover;
-      background-position: top center;
+    text-align: center;
+    &:hover{
+      border-bottom: 2px solid var(--link-color__current);
     }
   }
 
