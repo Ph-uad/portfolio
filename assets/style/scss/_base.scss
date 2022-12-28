@@ -11,12 +11,16 @@
 }
 
 :root{
+    --color-white : #fff;
+    --color-offWhite: #F7F9FC;
+
     --link-color__current : #1B73E8;
 }
 
 body {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    background: var(--color-offWhite);
 
     &::-webkit-scrollbar {
         display: none;
