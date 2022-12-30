@@ -1,7 +1,7 @@
 const container = document.querySelector('.project')
 devProject = [
     { img: './assets/image/dev/numb-Skull.png', title: 'Numb Skull', description: 'A website built with Javascript, GSAP ( a javascript animation library ), HTML5 and CSS that is simple yet nice to experience, using subtle animation like parralax, animate on scroll and good graphical content to better express a product.', link: 'https://prjct.netlify.app/' },
-    { img: './assets/image/dev/uI-adaptation.png', title: 'Monochrome Foundation', description: 'A non-responsive webpage built with basic HTML5 and CSS to implement UI design that had been created by a different UI-designer. Helping me further understand design from a different perspective.',link: 'https://ph-uad.github.io/figma-Foundation/' },
+    { img: './assets/image/dev/uI-adaptation.png', title: 'Monochrome Foundation', description: 'A responsive webpage built with basic HTML5 and CSS to implement UI design that had been created by a different UI-designer. Helping me further understand design from a different perspective.',link: 'https://ph-uad.github.io/figma-Foundation/' },
     { img: './assets/image/dev/Real-Estate.png', title: 'Real Estate', description: 'I built a real estate project using React, a popular JavaScript library for building user interfaces. The project allows users to browse listings of properties for sale or rent, and features a responsive design that works well on a variety of devices. Overall, the project is a powerful and user-friendly tool for anyone looking to buy or rent a property.', link: 'https://otterhome.netlify.app/' },
 ],
 designProject = [
