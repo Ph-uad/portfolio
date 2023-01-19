@@ -1,3 +1,3 @@
 # portfolio
-#this is the source code for Adebowale Phuad 
-# it most likely would be getting touched from time to time
+#This is the author's personal portfolio website 
+https://ph-uad.github.io/portfolio/
