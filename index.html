@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="front-end web-developer porfolio designs">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Roboto:wght@100;300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Mea+Culpa&family=Megrim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/style.css">
 
     <title>Portfolio</title>
@@ -59,19 +59,28 @@
         </div>
 
 
-        <div class="option center  ">
-            <div class="option__container container center flex">
-                <a href="#Dev-project" id="Dev--Link" class="flex option__link link ">
-                    <h4 class="option__text heading--tertiary">Websites</h4>
-                </a>
+        <div class="navigation center  ">
+            <div class="navigation__container container center flex">
 
-                <a href="#UI-project" id="UI--Link" class="flex option__link link">
-                    <h4 class="option__text heading--tertiary">UI Designs</h4>
-                </a>
+                <div class="options flex--column">
+                    <input type="radio" class="radio" checked name="option" id="websites">
+                    <label class="text--center label" for="websites">websites</label>
+                    <span class="checked--span"></span>
+                </div>
+              
+                <div class="options flex--column">
+                    <input type="radio" class="radio" name="option" id="design">
+                    <label class="text--center label" for="design">designs</label>
+                    <span class="checked--span"></span>
+                </div>
+          
 
-                <a href="#Writing--Link" id="Writing--Link" class="flex option__link link">
-                    <h4 class="option__text heading--tertiary">Articles</h4>
-                </a>
+                <div class="options flex--column">
+                    <input type="radio" class="radio" name="option" id="writing">
+                    <label class="text--center label" for="writing">writing</label>
+                    <span class="checked--span"></span>
+                </div>
+            
             </div>
         </div>
 
