@@ -1,30 +1,61 @@
-
-
-
 //root - formattting
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-:root{
-    --color-white : #fff;
-    --color-offWhite: #F7F9FC;
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
 
-    --link-color__current : #1B73E8;
+  @media (max-width: 75em) {
+    & {
+      font-size: 70%;
+    }
+  }
+
+  @media (max-width: 58em) {
+    & {
+      font-size: 52%;
+    }
+  }
+
+  @media (max-width: 56.25em) {
+    & {
+      font-size: 50%;
+    }
+  }
+
+  @media (max-width: 31.25em) {
+    & {
+      font-size: 43.75%;
+    }
+  }
+
+  @media (max-width: 25em) {
+    & {
+      font-size: 30%;
+    }
+  }
+
+  --color-white: #fff;
+  --color-offWhite: #f7f9fc;
+  --color--gray: #b5b3b3;
 }
 
 body {
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    background: var(--color-offWhite);
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background: var(--color-offWhite);
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 //

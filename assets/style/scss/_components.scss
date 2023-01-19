@@ -47,7 +47,7 @@
   }
 }
 
-.option {
+.navigation {
   position: sticky;
   top: 2%;
   height: 44px;
@@ -82,11 +82,15 @@
   }
 }
 
+.project{
+gap:5rem;
+padding: 5rem 0;
+}
+
 
 .tile{
   padding: 2rem;
   box-shadow: 0 20px 20px 0 rgb(0 0 0 / 3%);
-  margin: 10rem 0;
   width: 90%;
   gap: 10rem;
   background: var(--color-white);

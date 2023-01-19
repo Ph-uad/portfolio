@@ -7,9 +7,38 @@
 }
 
 :root {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
   --color-white: #fff;
-  --color-offWhite: #F7F9FC;
-  --link-color__current: #1B73E8;
+  --color-offWhite: #f7f9fc;
+  --color--gray: #b5b3b3;
+}
+@media (max-width: 75em) {
+  :root {
+    font-size: 70%;
+  }
+}
+@media (max-width: 58em) {
+  :root {
+    font-size: 52%;
+  }
+}
+@media (max-width: 56.25em) {
+  :root {
+    font-size: 50%;
+  }
+}
+@media (max-width: 31.25em) {
+  :root {
+    font-size: 43.75%;
+  }
+}
+@media (max-width: 25em) {
+  :root {
+    font-size: 30%;
+  }
 }
 
 body {
@@ -24,8 +53,7 @@ body::-webkit-scrollbar {
 .flex--column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 5rem;
+  justify-content: space-around;
 }
 
 .flex {
@@ -52,38 +80,6 @@ body::-webkit-scrollbar {
   }
   .grid__column--l {
     grid-column: 1/span 2;
-  }
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  scroll-behavior: smooth;
-}
-@media (max-width: 75em) {
-  html {
-    font-size: 70%;
-  }
-}
-@media (max-width: 58em) {
-  html {
-    font-size: 52%;
-  }
-}
-@media (max-width: 56.25em) {
-  html {
-    font-size: 50%;
-  }
-}
-@media (max-width: 31.25em) {
-  html {
-    font-size: 43.75%;
-  }
-}
-@media (max-width: 25em) {
-  html {
-    font-size: 30%;
   }
 }
 
@@ -130,9 +126,24 @@ h6 {
   text-decoration: line-through;
 }
 
+.label {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--color--gray);
+  transition: 0.4s linear;
+}
+
+.radio:checked ~ .label {
+  color: currentColor;
+}
+
 .link {
   color: currentColor;
   text-decoration: none;
+}
+
+.text--center {
+  text-align: center;
 }
 
 .nav {
@@ -177,7 +188,7 @@ h6 {
   flex: 0 0 100%;
 }
 
-.option {
+.navigation {
   position: -webkit-sticky;
   position: sticky;
   top: 2%;
@@ -188,31 +199,35 @@ h6 {
   box-shadow: inset 0 -4px 0 0 #dadce0;
 }
 @media (min-width: 64em) {
-  .option {
+  .navigation {
     height: 74px;
   }
 }
-.option__container {
+.navigation__container {
   height: 100%;
   justify-content: center;
   gap: 5%;
 }
-.option__link {
+.navigation__link {
   display: block;
   text-align: center;
 }
-.option__link:hover {
+.navigation__link:hover {
   border-bottom: 2px solid var(--link-color__current);
 }
-.option__background {
+.navigation__background {
   position: absolute;
   width: 100%;
+}
+
+.project {
+  gap: 5rem;
+  padding: 5rem 0;
 }
 
 .tile {
   padding: 2rem;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.03);
-  margin: 10rem 0;
   width: 90%;
   gap: 10rem;
   background: var(--color-white);
@@ -275,4 +290,31 @@ h6 {
 
 .container {
   padding: 2% 4%;
+}
+
+.radio {
+  width: 0;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.checked--span {
+  height: 0.5rem;
+  width: 2rem;
+  margin: 0 auto;
+  display: block;
+  background: var(--color--gray);
+  border-radius: 40rem;
+  transition: 0.4s linear;
+}
+
+.radio:checked ~ .checked--span {
+  background: #0b0b0b;
+  width: 5rem;
+}
+
+.options:hover > .checked--span {
+  width: 5rem;
 }/*# sourceMappingURL=style.css.map */

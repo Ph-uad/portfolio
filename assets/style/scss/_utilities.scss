@@ -1,8 +1,8 @@
 .width--min {
-    width: 50%;
+  width: 50%;
 }
 
-.center{
+.center {
   margin: 0 auto;
 }
 
@@ -10,7 +10,6 @@
   display: inline;
   width: 4rem;
   aspect-ratio: 1;
-  // filter: grayscale(100%);
 
   &-small {
     width: 2rem;
@@ -23,7 +22,10 @@
   border-radius: 1rem;
   overflow: hidden;
 
-  &__ellipse {clip-path: circle(45% at 50%);}}
+  &__ellipse {
+    clip-path: circle(45% at 50%);
+  }
+}
 
 .img {
   height: 100%;
@@ -31,10 +33,38 @@
   object-fit: cover;
 }
 
-.arrow__right{
+.arrow__right {
   height: 1.8rem;
 }
 
-.container{
+.container {
   padding: 2% 4%;
+}
+
+.radio{
+  width: 0;
+}
+
+.label{
+  cursor: pointer;
+}
+
+ .checked--span{
+  height: .5rem;
+  width: 2rem;
+  margin: 0 auto;
+  display: block;
+  background: var(--color--gray);
+  border-radius: 40rem;
+
+  transition: .4s linear;
+}
+
+.radio:checked ~ .checked--span{
+  background: #0b0b0b;
+  width: 5rem;
+}
+
+.options:hover > .checked--span{
+  width: 5rem;
 }
