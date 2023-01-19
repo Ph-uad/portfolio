@@ -11,8 +11,8 @@
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   scroll-behavior: smooth;
-  --color-white: #fff;
-  --color-offWhite: #f7f9fc;
+  --color--white: #fff;
+  --color--offWhite: #f7f9fc;
   --color--gray: #b5b3b3;
 }
 @media (max-width: 75em) {
@@ -44,7 +44,7 @@
 body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  background: var(--color-offWhite);
+  background: var(--color--offWhite);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -150,7 +150,7 @@ h6 {
   padding: 0.5rem 2rem;
   justify-content: space-between;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: var(--color--white);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -195,7 +195,7 @@ h6 {
   height: 44px;
   width: 100vw;
   flex-wrap: nowrap;
-  background: var(--color-offWhite);
+  background: var(--color--offWhite);
   box-shadow: inset 0 -4px 0 0 #dadce0;
 }
 @media (min-width: 64em) {
@@ -208,17 +208,6 @@ h6 {
   justify-content: center;
   gap: 5%;
 }
-.navigation__link {
-  display: block;
-  text-align: center;
-}
-.navigation__link:hover {
-  border-bottom: 2px solid var(--link-color__current);
-}
-.navigation__background {
-  position: absolute;
-  width: 100%;
-}
 
 .project {
   gap: 5rem;
@@ -230,7 +219,7 @@ h6 {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.03);
   width: 90%;
   gap: 10rem;
-  background: var(--color-white);
+  background: var(--color--white);
   border-radius: 10px;
 }
 @media (min-width: 64em) {
