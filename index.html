@@ -10,7 +10,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Mea+Culpa&family=Megrim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Mea+Culpa&family=Megrim&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/style.css">
 
     <title>Portfolio</title>
@@ -25,41 +26,40 @@
 
 
     <div class="fluid__container">
-        <div class="profile__container">
-            <div class="bio flex container">
-                <figure class="bio__picture figure center figure__ellipse">
-                    <img src="./assets/image/PhuadF.jpeg" alt="" class="img">
-                </figure>
+        <div aria-label="profile" class="profile__container bio flex container">
+            <figure class="bio__picture figure figure__ellipse">
+                <img src="./assets/image/PhuadF.jpg" alt="" class="img">
+            </figure>
 
-                <div class="bio__details">
-                    <span class="bio-icon">
-                        <h2 class="heading--secondary">Phuad Adebowale</h2>
-                        <h1 class="heading--primary">Web Developer, UI Designer and Writer</h1>
-                        <span class="flex width--min">
-                            <svg class="icon icon-small">
-                                <use href="./assets/image/sprite.svg#i-html5" />
-                            </svg>
+            <div class="bio__details">
+                <span class="bio-icon">
+                    <h2 class="heading--secondary">Phuad Adebowale</h2>
+                    <h1 class="heading--primary">Web Developer, UI Designer and Writer</h1>
+                    <span class="flex width--min">
+                        <svg class="icon icon-small">
+                            <use href="./assets/image/sprite.svg#i-html5" />
+                        </svg>
 
-                            <svg class="icon icon-small">
-                                <use href="./assets/image/sprite.svg#i-css3" />
-                            </svg>
+                        <svg class="icon icon-small">
+                            <use href="./assets/image/sprite.svg#i-css3" />
+                        </svg>
 
-                            <svg class="icon icon-small">
-                                <use href="./assets/image/sprite.svg#i-javascript" />
-                            </svg>
-                            <svg class="icon icon-small">
-                                <use href="./assets/image/sprite.svg#i-react" />
-                            </svg>
-                        </span>
-
+                        <svg class="icon icon-small">
+                            <use href="./assets/image/sprite.svg#i-javascript" />
+                        </svg>
+                        <svg class="icon icon-small">
+                            <use href="./assets/image/sprite.svg#i-react" />
+                        </svg>
                     </span>
-                </div>
-
+                    <div class="span flex">
+                        <button class="button">About</button>
+                    </div>
+                </span>
             </div>
         </div>
 
 
-        <div class="navigation center  ">
+        <div class="navigation center ">
             <div class="navigation__container container center flex">
 
                 <div class="options flex--column">
@@ -67,59 +67,68 @@
                     <label class="text--center label" for="websites">websites</label>
                     <span class="checked--span"></span>
                 </div>
-              
+
                 <div class="options flex--column">
                     <input type="radio" class="radio" name="option" id="design">
                     <label class="text--center label" for="design">designs</label>
                     <span class="checked--span"></span>
                 </div>
-          
+
 
                 <div class="options flex--column">
                     <input type="radio" class="radio" name="option" id="writing">
                     <label class="text--center label" for="writing">writing</label>
                     <span class="checked--span"></span>
                 </div>
-            
+
             </div>
         </div>
 
 
-        <div id="widget" class="project flex--column ">
+        <div id="widget" aria-describedby="works, projects" class="project flex--column ">
+        </div>
+
+        <div class="about">
+            <div class="container">
+                <h2 class="heading--secondary">About</h2>
+            </div>
         </div>
 
 
-        <div class=" flex footer-container container">
+        <footer class="footer">
+            <div class="flex container footer-container">
+                <h6 class="heading--sextuple">Get CV</h6>
 
-            <div class="flex">
-                <h6 class="heading--sextuple">Get In Touch</h6>
-                <svg class="icon-small arrow__right">
-                    <use href="./assets/image/sprite.svg#i-arrow-right" />
-                </svg>
-            </div>
-
-            <div class="">
                 <div class="flex">
-                    <a href="https://github.com/Ph-uad?tab=repositories" class="link">
-                        <svg class="icon icon-small">
-                            <use href="./assets/image/sprite.svg#i-github" />
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/phuad-adebowale-71407b1b3/" class="link">
-                        <svg class="icon icon-small">
-                            <use href="./assets/image/sprite.svg#i-linkedin" />
-                        </svg>
-                    </a>
-                    <a href="mailto:temidayo26j@gmail.com" class="link">
-                        <svg class="icon icon-small">
-                            <use href="./assets/image/sprite.svg#i-gmail" />
-                        </svg>
-                    </a>
-
+                    <h6 class="heading--sextuple">Get In Touch</h6>
+                    <svg class="icon-small arrow__right">
+                        <use href="./assets/image/sprite.svg#i-arrow-right" />
+                    </svg>
                 </div>
-                <p class="paragraph signature ml3">Phaud</p>
+
+                <div class="">
+                    <div class="flex">
+                        <a href="https://github.com/Ph-uad?tab=repositories" class="link">
+                            <svg class="icon icon-small">
+                                <use href="./assets/image/sprite.svg#i-github" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/phuad-adebowale-71407b1b3/" class="link">
+                            <svg class="icon icon-small">
+                                <use href="./assets/image/sprite.svg#i-linkedin" />
+                            </svg>
+                        </a>
+                        <a href="mailto:temidayo26j@gmail.com" class="link">
+                            <svg class="icon icon-small">
+                                <use href="./assets/image/sprite.svg#i-gmail" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
             </div>
-        </div>
+            <p class="paragraph text--center signature ml3">Phaud</p>
+        </footer>
     </div>
     </div>
 

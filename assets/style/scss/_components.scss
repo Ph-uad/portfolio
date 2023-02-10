@@ -1,16 +1,11 @@
 //nav
 .nav {
   padding: 0.5rem 2rem;
-  justify-content: space-between;
   text-transform: uppercase;
-  background-color: var(--color--white);
+  background-color: var(--color-white);
   position: sticky;
   top: 0;
   z-index: 100;
-
-  @media (max-width: 64em) {
-    flex-direction: row;
-  }
 
   &-title {
     font-family: "Megrim", cursive;
@@ -18,42 +13,34 @@
   }
 }
 
-//Header
-.profile {
-  
-  &__container {
-    height: 100%;
-    justify-content: space-around;
-  }
-}
 //
-
 .bio {
   justify-content: left;
+  width: 80%;
+  margin: 0 auto;
 
   &__picture {
-    flex: 0 0 40%;
-    justify-self: center;
-    align-self: center;
+    flex: 0 1 40%;
 
     @media (min-width: 45em) {
-      & {
-        flex: 0 0 20%;
-      }
+      & {flex: 0 0 25%;}
     }
   }
   &__details {
-    flex: 0 0 100%;
+    flex: 0 1 70%;
+    @media (min-width: 45em) {
+      & {    flex: 0 1 100%;}
+    }
   }
 }
 
 .navigation {
   position: sticky;
   top: 2%;
-  height: 44px;
+  height: 7rem;
   width: 100vw;
   flex-wrap: nowrap;
-  background: var(--color--offWhite);
+  background: var(--color-offWhite);
   box-shadow: inset 0 -4px 0 0 #dadce0;
 
   @media (min-width:64em) {
@@ -73,23 +60,25 @@
 .project{
 gap:5rem;
 padding: 5rem 0;
+align-items: center;
+justify-content: center;
 }
 
 
 .tile{
+  display: block;
   padding: 2rem;
   box-shadow: 0 20px 20px 0 rgb(0 0 0 / 3%);
   width: 90%;
   gap: 10rem;
-  background: var(--color--white);
+  background: var(--color-white);
   border-radius: 10px;
 
   @media (min-width:64em) {
     &{
-      width: 70%;
+      width: 60%;
     }
   }
-
 
   &__details {
     flex: 1 0 60%;
@@ -100,6 +89,7 @@ padding: 5rem 0;
 
 //footer
 .footer {
+  background-color: var(--color-white);
   &-container {
     width: 100%;
     margin: 0 auto;

@@ -1,19 +1,13 @@
-.width--min {
-  width: 50%;
-}
+.width--min {width: 50%;}
 
-.center {
-  margin: 0 auto;
-}
+.center {margin: 0 auto;}
 
 .icon {
   display: inline;
   width: 4rem;
   aspect-ratio: 1;
 
-  &-small {
-    width: 2rem;
-  }
+  &-small {width: 2rem;}
 }
 
 .figure {
@@ -22,9 +16,7 @@
   border-radius: 1rem;
   overflow: hidden;
 
-  &__ellipse {
-    clip-path: circle(45% at 50%);
-  }
+  &__ellipse {clip-path: circle(45% at 50%);}
 }
 
 .img {
@@ -50,21 +42,36 @@
 }
 
  .checked--span{
-  height: .5rem;
+  height: .4rem;
   width: 2rem;
   margin: 0 auto;
   display: block;
-  background: var(--color--gray);
-  border-radius: 40rem;
+  background: var(--color-gray);
 
   transition: .4s linear;
 }
 
 .radio:checked ~ .checked--span{
   background: #0b0b0b;
-  width: 5rem;
+  width: 8rem;
 }
 
 .options:hover > .checked--span{
   width: 5rem;
+}
+
+.button{
+  all: unset;
+  margin-top: 1rem;
+  border: .5px solid var(--color-gray-dark);
+  color: inherit;
+  padding: .5rem 5rem;
+  cursor: pointer;
+
+  transition: .4s linear;
+
+  &:hover, &:focus{
+    background-color: var(--color-gray-dark);
+    color: var(--color-white);
+  }
 }
