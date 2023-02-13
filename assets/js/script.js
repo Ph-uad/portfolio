@@ -21,13 +21,15 @@ writing = document.querySelector('#writing').checked;
 const jobTile = (project) => {
     return (
         `
-        <a href="${project.link}" class="tile link">
-            <div class="center">
-                <div class="container flex">
-                    <figure class="figure">
-                        <img src='${project.img}' class='img' alt="project thumbnail" />
-                    </figure>
-                    <div class="tile__details details">
+        <a href="${project.link}" class=" link">
+            <div class="tile center">
+                <div class=" flex">
+                <div className="tile__poster">
+                <figure class="tile__poster figure">
+                    <img src='${project.img}' class='tile__poster img' alt="project thumbnail" />
+                </figure>
+                </div>
+                    <div class="container tile__details details">
                         <h2 class="heading--secondary">${project.title}</h2>
                         <p class="paragraph">${project.description}</p>
                     </div>

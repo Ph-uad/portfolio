@@ -11,6 +11,8 @@
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  background: var(--color-offWhite);
   --color-white: #fff;
   --color-offWhite: #f7f9fc;
   --color-gray: #b5b3b3;
@@ -43,9 +45,7 @@
 }
 
 body {
-  box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  background: var(--color-offWhite);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -214,13 +214,14 @@ h6 {
 }
 
 .tile {
-  display: block;
-  padding: 2rem;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.03);
   width: 90%;
+  min-height: 25rem;
+  overflow: hidden;
   gap: 10rem;
   background: var(--color-white);
-  border-radius: 10px;
+  border-radius: 5px;
+  transition: 0.4s linear;
 }
 @media (min-width: 64em) {
   .tile {
@@ -228,8 +229,20 @@ h6 {
   }
 }
 .tile__details {
-  flex: 1 0 60%;
-  padding: 3%;
+  flex: 1 0 50%;
+}
+.tile__poster {
+  min-height: 25rem;
+  flex: 0 1 40%;
+}
+.tile:hover {
+  translate: 0 -5%;
+}
+
+.about {
+  position: fixed;
+  top: 3rem;
+  right: 5rem;
 }
 
 .footer {
@@ -259,9 +272,6 @@ h6 {
 }
 
 .figure {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
   overflow: hidden;
 }
 .figure__ellipse {
