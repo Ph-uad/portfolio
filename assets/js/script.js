@@ -4,7 +4,6 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 var textWrapper2 = document.querySelector('.ml3');
 textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
 
-
 anime.timeline({ loop: false })
     .add({
         targets: '.ml12 .letter',
