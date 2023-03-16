@@ -1,75 +1,20 @@
-.width--min {width: 50%;}
-
-.center {margin: 0 auto;}
-
-.icon {
-  display: inline;
-  width: 4rem;
-  aspect-ratio: 1;
-
-  &-small {width: 2rem;}
+span{
+    width: fit-content;
+}
+.right{
+    margin-left: auto;
+}
+.block{
+    display: block;
 }
 
-.figure {
-  overflow: hidden;
-
-  &__ellipse {clip-path: circle(45% at 50%);}
+.width-min{
+    padding:0 1.6rem;
+    @media (min-width:64em) {
+        &{
+            width: 60%;
+        }
+    }
 }
 
-.img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  
-}
 
-.arrow__right {
-  height: 1.8rem;
-}
-
-.container {
-  padding: 2% 4%;
-}
-
-.radio{
-  width: 0;
-}
-
-.label{
-  cursor: pointer;
-}
-
- .checked--span{
-  height: .4rem;
-  width: 2rem;
-  margin: 0 auto;
-  display: block;
-  background: var(--color-gray);
-
-  transition: .4s linear;
-}
-
-.radio:checked ~ .checked--span{
-  background: #0b0b0b;
-  width: 8rem;
-}
-
-.options:hover > .checked--span{
-  width: 5rem;
-}
-
-.button{
-  all: unset;
-  margin-top: 1rem;
-  border: .5px solid var(--color-gray-dark);
-  color: inherit;
-  padding: .5rem 5rem;
-  cursor: pointer;
-
-  transition: .4s linear;
-
-  &:hover, &:focus{
-    background-color: var(--color-gray-dark);
-    color: var(--color-white);
-  }
-}

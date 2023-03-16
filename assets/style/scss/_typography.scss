@@ -1,28 +1,45 @@
-body{font-size: 1.5rem;}
+//H4 PROMPT LIKE LOOK
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-
+body {
+  font-family: "Junge", serif;
+  font-size: 1.6rem;
+  padding: 1.6rem;
 }
 
-.heading{
-  &--primary {
-    font-size: 3rem;
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+
+.heading {
+  &-primary {
+    font-size: clamp(2.5rem, 3vw, 3rem);
   }
 
-  &--secondary{
-    font-size:2rem;
-    text-transform: uppercase;
+  &-secondary {
+    font-size: clamp(3rem, 4vw, 4rem);
+    text-transform: capitalize;
   }
 
-  &--tertiary {
-    font-size: 1.8rem;
+  &-tertiary {
+    color: #d1d1d1;
+    font-family: "lora", sans-serif;
+    font-size: clamp(1.9rem, 2.1vw, 2.1rem);
+    text-transform: capitalize;
     font-weight: 300;
+
+    @media (prefers-color-scheme: light) {
+      & {
+        color: #101010;
+      }
+    }
+  }
+
+  &-prompt {
+    text-transform: uppercase;
+    font-family: "Megrim", cursive;
+    font-size: 1.5rem;
   }
 
   span,
@@ -32,10 +49,10 @@ h6 {
   }
 }
 
-.paragraph{
+.paragraph {
   font-size: 1.6rem;
-  font-weight: 300;
-}  
+  margin: 1% 0;
+}
 
 .small-text {
   text-align: center;
@@ -46,27 +63,36 @@ h6 {
 }
 
 .signature {
-  font-family: 'Mea Culpa', cursive;
+  font-family: "Mea Culpa", cursive;
   text-decoration: line-through;
 }
 
-.label{
+.label {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--color-gray);
 
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
 
-.radio:checked ~ .label{color: currentColor;}
+.radio:checked ~ .label {
+  color: currentColor;
+}
 
 .link {
   color: currentColor;
   text-decoration: none;
 }
 
-
-
-.text--center{
+.text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
+
+.footer a{
+  color: currentColor;
+}
+
+

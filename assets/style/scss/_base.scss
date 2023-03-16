@@ -8,54 +8,32 @@
 }
 
 :root {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-size: clamp(30%, 62.5%, 70%);
+  font-family: "Catamaran", sans-serif;
+  color-scheme: light dark;
   line-height: 1.5;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  background: var(--color-offWhite);
-
-  @media (max-width: 75em) {
-    & {
-      font-size: 70%;
-    }
-  }
-
-  @media (max-width: 58em) {
-    & {
-      font-size: 52%;
-    }
-  }
-
-  @media (max-width: 56.25em) {
-    & {
-      font-size: 50%;
-    }
-  }
-
-  @media (max-width: 31.25em) {
-    & {
-      font-size: 43.75%;
-    }
-  }
-
-  @media (max-width: 25em) {
-    & {
-      font-size: 30%;
-    }
-  }
-
-  --color-white: #fff;
-  --color-offWhite: #f7f9fc;
-  --color-gray: #b5b3b3;
-  --color-gray-dark: #2d2d2d;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  background-image: linear-gradient(
+    174.2deg,
+    rgb(249, 246, 241) 7.1%,
+    rgba(240, 246, 238, 1) 67.4%
+  );
 
   &::-webkit-scrollbar {
     display: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    & {
+      background-image: linear-gradient(
+        174.2deg,
+        rgb(43, 40, 36) 7.1%,
+        rgb(45, 47, 44) 67.4%
+      );
+    }
   }
 }
 
